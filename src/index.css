@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&family=Inter:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Georgia", serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-bg-main: #080808;
+  --color-bg-section: #0f0f0f;
+  --color-bg-card: #141414;
+  --color-border-main: rgba(16, 185, 129, 0.2);
+  --color-primary: #ffffff;
+  --color-accent: #10b981;
+  --color-accent-hover: #34d399;
+  --color-muted: #777777;
+  --color-subtle: #333333;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .glass-nav {
+    background: rgba(8, 8, 8, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(16, 185, 129, 0.4);
+    transform: scale(1.02);
+  }
+
+  .glass-testimonial {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}

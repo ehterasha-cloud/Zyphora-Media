@@ -1,8 +1,6 @@
 {
-  "name": "Remix: zyphora media ",
-  "description": "Zyphora Media — Web design agency portfolio",
+  "name": "Zyphora Media",
+  "description": "Zyphora Media corporate website.",
   "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

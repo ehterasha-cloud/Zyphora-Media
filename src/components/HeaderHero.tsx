@@ -241,6 +241,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 3, ease: [0.33, 1, 0.68, 1] }}
             className="text-[44px] md:text-[84px] font-heading font-light leading-[0.95] tracking-[0.03em] text-balance"
           >
+            <span className="sr-only">Zyphora Media - Remote UI/UX Designer & Web Design Agency</span>
             {t("hero.title1")}
             <br />
             <span className="font-semibold">{t("hero.title2")}</span>

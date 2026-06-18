@@ -102,7 +102,7 @@ export function Projects() {
                   >
                     <img
                       src={p.imageSrc}
-                      alt={p.name}
+                      alt={`${p.name} - ${p.tag} Website Design and UI/UX Prototype`}
                       style={{
                         width: "100%",
                         height: "100%",
@@ -205,7 +205,7 @@ export function Projects() {
                   />
                   <img
                     src={selectedProject.imageSrc}
-                    alt={selectedProject.name}
+                    alt={`${selectedProject.name} - ${selectedProject.tag} High-Performance Web Design Project Preview`}
                     className="w-full h-full object-cover object-top"
                   />
                   <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -259,7 +259,7 @@ export function Projects() {
                         >
                           <img
                             src={img}
-                            alt={`${selectedProject.name} detail ${idx + 1}`}
+                            alt={`${selectedProject.name} website design detail ${idx + 1} showing UI/UX expertise`}
                             className="w-full h-full object-cover object-center grayscale-[20%] hover:grayscale-0 transition-all duration-700"
                           />
                         </div>
